@@ -18,7 +18,7 @@ import com.xvrozz.testvisitor.repository.VisitDataRepository;
 @RequestMapping("/")
 public class MainController {
 	
-	VisitDataRepository visitDataRepository;
+    VisitDataRepository visitDataRepository;
 	
     public static final int ONE = 1;
 
