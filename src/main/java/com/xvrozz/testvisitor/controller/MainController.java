@@ -41,7 +41,7 @@ public class MainController {
     }
     
     @RequestMapping(value = "site-statistic", method = RequestMethod.GET)
-    public Map<String, Integer> pageVisit(@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm") LocalDateTime from, 
+    public Map<String, Integer> siteStatistic(@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm") LocalDateTime from, 
     		@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm") LocalDateTime to) {
     	Map<String, Integer> answer = new HashMap<String, Integer>();
     	answer.put("totalVisitCount", visitDataRepository.countTotalVisitCount(from, to));
